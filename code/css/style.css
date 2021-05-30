@@ -1,5 +1,10 @@
 @charset "utf-8";
-
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
 img {
   max-width: 90%;
   height: auto;
@@ -10,8 +15,6 @@ section {
 }
 .section_images {
   text-align: center;
-}
-.apply_btn {
 }
 .apply_btn:hover {
   opacity: 0.8;
@@ -118,4 +121,24 @@ footer {
 /*レスポンシブ対応*/
 
 @media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px 0;
+  }
+  section {
+    padding: 1rem;
+  }
+
+  /* ヘッダー */
+  .top {
+    padding: 20px;
+  }
 }
