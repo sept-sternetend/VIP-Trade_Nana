@@ -9,7 +9,7 @@
 img {
   max-width: 100%;
   height: auto;
-  padding: 15px 0;
+  padding: 15px;
 }
 section {
   padding: 3.5rem;
@@ -59,6 +59,7 @@ section {
   background-color: #06163d;
   height: auto;
   text-align: center;
+  padding: 0;
 }
 .sec04 {
   background-color: #bcd1f3;
@@ -66,15 +67,30 @@ section {
 .sec04_thumbnails {
 }
 /* section05 */
-.sec05_5points {
-  padding-top: 40px;
+.sec05 {
+  background: linear-gradient(
+      0deg,
+      transparent 19px,
+      rgb(211, 211, 211, 0.5) 20px
+    ),
+    linear-gradient(90deg, transparent 19px, rgb(211, 211, 211, 0.5) 20px);
+  background-size: 20px 20px;
 }
-.sec05_5points img {
+.sec05_5points {
+  padding: 40px;
+}
+.sec05_5points {
   padding-top: 20px;
 }
+.sec05 p img {
+  text-align: center;
+}
+
 /* section06 */
 .sec06 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 /* section07 */
 .sec07 {
@@ -83,19 +99,22 @@ section {
   background-size: cover;
 }
 .sec07 h2 {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 /* section08 */
 .sec08 {
   background-image: url(/images/sec08_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0 100px 0;
+  padding: 50px 0 100px 0;
+}
+.sec08_list {
+  padding-top: 50px;
 }
 .white_background {
   padding: 45px;
   background-color: #fff;
-  padding: 90px 0 60px 0;
+  padding: 70px 0 60px 0;
   margin-top: 50px;
 }
 
@@ -132,7 +151,7 @@ footer {
   img {
     max-width: 100%;
     height: auto;
-    padding: 15px 0;
+    padding: 15px;
   }
   section {
     padding: 2rem 0;
@@ -145,4 +164,20 @@ footer {
   .top-btn {
     padding: 10px 0 30px 0;
   }
+
+  /* section03 */
+  .section_sp_img {
+    width: 150%;
+  }
+
+
+  /* section08 */
+  .sec08_list {
+    padding: 20px 0;
+  }
+  .sec08 {
+    padding: 50px 0 100px 0;
+  }
+  .white_background {
+    padding: 30px 0;
 }
