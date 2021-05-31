@@ -14,6 +14,14 @@ img {
 section {
   padding: 3.5rem;
 }
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:active {
+  color: #009ada;
+}
+
 .section_images {
   text-align: center;
 }
@@ -49,23 +57,24 @@ section {
 
 /* section03 */
 .sec03 {
-  background-image: url(/images/sec03_background.jpg);
+  background-image: url(../images/sec03_background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* section04 */
 .sec04_bk-ground {
-  background-color: #06163d;
-  height: auto;
-  text-align: center;
+  background-image: url(../images/sec04_background.png);
+  display: flex;
+  height: 260px;
   padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 .sec04 {
   background-color: #bcd1f3;
 }
-.sec04_thumbnails {
-}
+
 /* section05 */
 .sec05 {
   background: linear-gradient(
@@ -108,14 +117,12 @@ section {
   background-size: cover;
   padding: 50px 0 100px 0;
 }
-.sec08_list {
-  padding-top: 50px;
-}
+
 .white_background {
   padding: 45px;
   background-color: #fff;
   padding: 70px 0 60px 0;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* フッター */
@@ -138,9 +145,31 @@ footer {
   margin: 5px;
 }
 
+/* スクロールボタン */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80%;
+}
+#page-top a {
+  background: #0b79bf;
+  text-decoration: none;
+  color: #fff;
+  width: 80px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  border-radius: 80px;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background: #06163d;
+}
+
 /*レスポンシブ対応*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .pc {
     display: none;
   }
@@ -169,15 +198,33 @@ footer {
   .section_sp_img {
     width: 150%;
   }
-
-
-  /* section08 */
-  .sec08_list {
-    padding: 20px 0;
+  /* section04 */
+  .sec04_bk-ground {
+    background-image: none;
+    height: auto;
   }
+  .sec04_bk-ground img {
+    padding: 0;
+  }
+  /* section05 */
+  .sec05_5points {
+    padding: 0;
+  }
+
   .sec08 {
-    padding: 50px 0 100px 0;
+    padding: 40px 0 50px 0;
   }
   .white_background {
-    padding: 30px 0;
+    padding: 20px 0;
+  }
+  .policy {
+    display: block;
+    text-align: left;
+  }
+  .policy li {
+    border-bottom: 1px solid #000;
+  }
+  footer p {
+    padding: 10px;
+  }
 }
