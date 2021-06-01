@@ -156,11 +156,11 @@ footer {
   background: #0b79bf;
   text-decoration: none;
   color: #fff;
-  width: 80px;
-  padding: 15px;
+  width: 70px;
+  padding: 10px;
   text-align: center;
   display: block;
-  border-radius: 80px;
+  border-radius: 50%;
 }
 #page-top a:hover {
   text-decoration: none;
@@ -226,5 +226,11 @@ footer {
   }
   footer p {
     padding: 10px;
+  }
+
+  /* スクロールボタン */
+  #page-top a {
+    width: 60px;
+    padding: 5px;
   }
 }
