@@ -8,11 +8,19 @@ section {
 }
 p {
   line-height: 1.5;
-  text-indent: -1em;
+  text-indent: -1.2em;
   padding-left: 2em;
 }
 ul li {
+  padding-left: 2em;
+}
+li {
   list-style: none;
+  line-height: 1.5;
+}
+.indent-li {
+  text-indent: -2.6em;
+  padding-left: 2em;
 }
 header {
   height: 20px;
@@ -60,7 +68,18 @@ footer p {
 /*レスポンシブ対応*/
 
 @media screen and (max-width: 767px) {
+  body {
+    font-size: 0.7rem;
+  }
   .container {
     max-width: 540px;
+  }
+  /* .intend_sp02 {
+    text-indent: -1em;
+    padding-left: 1.5em;
+  } */
+  .intend03_sp {
+    text-indent: -1em;
+    padding-left: 1.5em;
   }
 }
